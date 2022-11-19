@@ -1,3 +1,13 @@
+export interface Person {
+  name: string;
+  age: number;
+  address: {
+    postcode: string;
+    street: string;
+    number?: string;
+  };
+}
+
 export type KeysOfDeepObject<T extends Record<string, any>> = T extends Record<
   string,
   any
